@@ -29,7 +29,7 @@ bot.on('message', msg => {
 
     var input = msg.content.toLowerCase();
 
-    if (input.startsWith('?play') || input.startsWith('added')) {
+    if (input.startsWith(prefix + 'play') || input.startsWith('added')) {
         if (msg.author.bot === "false") return;
         setTimeout(function() {
             msg.delete()
